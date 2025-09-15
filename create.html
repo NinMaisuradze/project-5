@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ბრენდის შექმნა</title>
+  <script src="js/script.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+  <header class="bg-gradient-to-r from-blue-600 to-blue-400 py-4">
+    <h1 class="text-white text-3xl text-center font-semibold">ბრენდის შექმნა</h1>
+  </header>
+
+  <!-- Form Section -->
+  <section class="max-w-lg mx-auto mt-8 px-4 py-6 bg-white rounded-lg shadow-md">
+    <form id="brandForm">
+      <div class="mb-4">
+        <label for="brandName" class="block text-sm font-medium text-gray-700">ბრენდის სახელი</label>
+        <input type="text" id="brandName" name="brandName" class="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        <p id="brandNameError" class="text-red-500 text-sm hidden">გთხოვთ შეავსოთ ბრენდის სახელი!</p>
+      </div>
+
+      <div class="mb-4">
+        <label for="brandDescription" class="block text-sm font-medium text-gray-700">ბრენდის აღწერა</label>
+        <textarea id="brandDescription" name="brandDescription" class="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4" required></textarea>
+        <p id="brandDescriptionError" class="text-red-500 text-sm hidden">გთხოვთ შეავსოთ ბრენდის აღწერა!</p>
+      </div>
+
+      <div class="mb-4">
+        <label for="brandColor" class="block text-sm font-medium text-gray-700">ბრენდის ფერი</label>
+        <input type="color" id="brandColor" name="brandColor" class="mt-1 p-2 w-full border border-gray-300 rounded-md">
+      </div>
+
+      <div class="flex justify-between">
+        <button type="button" onclick="window.location.href='index.html'" class="bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-700 transition duration-300">მთავარ გვერდზე დაბრუნება</button>
+        <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-800 transition duration-300">ბრენდის შექმნა</button>
+      </div>
+    </form>
+  </section>
+
+</body>
+</html>
